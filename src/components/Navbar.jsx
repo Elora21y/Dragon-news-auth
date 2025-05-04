@@ -9,7 +9,7 @@ const navigate = useNavigate()
 
   const handleLogout = () =>{
     logout().then(()=>{
-      console.log('Logged out')
+      // console.log('Logged out')
       navigate('/')
     })
     .catch(error => {

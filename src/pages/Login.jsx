@@ -23,7 +23,7 @@ const Login = () => {
     setErrorMsg("");
     loginUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         const user = result.user;
 
         if (!user.emailVerified) {
@@ -61,7 +61,7 @@ const Login = () => {
   };
 
   const handleForgetPass = () => {
-    console.log(emailRef.current.value);
+    // console.log(emailRef.current.value);
     const email = emailRef.current.value;
 
     if (!email) {
