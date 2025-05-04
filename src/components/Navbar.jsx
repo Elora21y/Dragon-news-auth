@@ -25,7 +25,9 @@ const navigate = useNavigate()
         <NavLink to="/career">Career</NavLink>
       </div>
       <div className="login-btn flex gap-5">
-        <img src={userImg} alt="" />
+        <img 
+        className="w-12 h-12 object-cover rounded-full"
+         src={`${user ? user.photoURL  : userImg}`} alt="" />
         {
           user ? 
           <button className="btn btn-primary" onClick={handleLogout}>Logout</button>
